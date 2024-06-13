@@ -1,0 +1,27 @@
+width: 281px;
+  height: 281px;
+  display: inline-flex;
+  margin-right: 10px;
+  margin-left: 143px;
+  align-items: center;
+  margin-top: 290px;
+border: 6px solid rgb(163, 163, 163);
+
+.categorias>h3 {
+  background-color: black;
+  height: 47px;
+  width: 350px;
+  color: white;
+  display: flex;
+  margin-top: 256px;
+  justify-content: center;
+  align-items: center;
+  margin-left: -461px;
+  margin-top: 255px;
+  max-width: 100%;
+}
+
+.categorias>h3 > a {
+  color: white;
+  text-decoration: none;
+}

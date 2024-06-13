@@ -1,0 +1,272 @@
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: rgb(220, 220, 220);
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 18px 2px;
+    width: 100%;
+}
+
+.content {
+    background-color: rgb(135, 135, 135);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    gap: 2rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-filter {
+    background-color: rgb(67, 67, 67);
+    display: block;
+    padding: 7px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 20px 3px;
+}
+
+.orders {
+    color: white;
+}
+
+.orders a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.orders select {
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.type-product {
+    font-weight: normal;
+    display: block;
+    cursor: pointer;
+    width: 120px;
+}
+
+.type-product p {
+    font-weight: bold;
+    color: white;
+}
+
+.type-product label {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.type-product input {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-mobile {
+    font-weight: normal;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    margin-top: -20px;
+}
+
+.menu-mobile p {
+    font-weight: bold;
+}
+
+.menu-mobile label {
+    display: flex;
+    align-items: center;
+    width: 78px;
+}
+
+.menu-mobile input {
+    width: 17px;
+    height: 17px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    border: 2px solid rgb(42, 42, 42);
+}
+
+.product p {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.product button {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(81, 80, 80);
+    color: rgb(225, 224, 224);
+    border: solid black;
+}
+
+.product button a {
+    color: rgb(225, 224, 224);
+    text-decoration: none;
+}
+
+.product button:hover {
+    background-color: rgb(147, 147, 147);
+    transition: 0.3s;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 5px;
+}
+
+#filterButton {
+    height: 30px;
+    width: 50px;
+    margin-top: 40px;
+}
+
+.menu-mobile #closeFilter {
+    color: white;
+    display: flex;
+    float: right;
+    background-color: rgb(0, 0, 0);
+    width: 65px;
+    box-shadow: none;
+}
+
+.hiden {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        width: auto;
+    }
+
+    main {
+        width: auto;
+    }
+    
+    .content {
+        gap: 3rem;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .box-filter {
+        font-size: 13px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .type-product {
+        display: none;
+    }
+
+    .menu-mobile {
+        font-size: 13px;
+        display: none;
+        margin-top: 20px;
+    }
+
+    .menu-mobile.show {
+        display: block;
+    }
+
+    .products {
+        width: 100%;
+    }
+
+    .product img {
+        height: 140px;
+    }
+
+    .orders select {
+        height: 30px;
+    }
+
+}
+
+@media (min-width: 801px) {
+
+    .menu-mobile {
+        display: none;
+    }
+
+    #filterButton {
+        display: none !important;
+    }
+
+    .products {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1050px) {
+    .products {
+        display: grid;
+    grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width: 801px) and (max-width: 856px) {
+    .products {
+        display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (width: 1024px) {
+    .products {
+        display: grid;
+    grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (width: 768px) {
+    .menu-mobile {
+        margin-top: 50px;
+    }
+}
+
+@media (width: 360px) {
+    .content {
+        gap: 3rem;
+    }
+}
